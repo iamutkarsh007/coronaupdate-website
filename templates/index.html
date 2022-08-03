@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="google-site-verification" content="SWKe3rQ2VqxaJPK6gxfjD-Dn-XmlzBrxZiJbgJh97pQ" />
+<title>Corona Update On Your Mail</title>
+<meta name="description" content="CoronaUpdate is non-profit tool that gives the Update of COVID19 in India and its States. and also predicts the next 15 days COVID19 Situation in India.
+We send daily Update of COVID19 situation to Clients Mail .
+In the form of Plots and Bars. For easily Understand and Seeing">
+
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+<!--  Analystic Library -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-187040399-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-187040399-1');
+</script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-187040399-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/animate.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/font-awesome.min.css') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/simple-line-icons.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/owl.carousel.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/owl.theme.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/owl.transitions.css') }}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,800,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<div class="main-header" id="main-header">
+  <nav class="navbar mynav navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#">CoronaUpdate</a> </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#banner">Home</a></li>
+          <li><a href="#contact">Register</a></li>
+          <li><a href="#work">Prevention</a></li>
+          <li><a href="#testimonials">Facts</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="banner" id="banner">
+  <div class="bg-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-text">
+            <h2>Welcome to <span>CoronaUpdate</span> App</h2>
+            <p>It send the Covid19 detail's daily on Your Mail in Beautiful Visualisation</p>
+            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" class="banner-button">Learn More</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="feature-box media">
+          <div class="icon-box text-center pull-left media-object"> <i class="icon-bulb"></i> </div>
+          <div class="feature-text media-body">
+            <h4>Open Source</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="feature-box media pull-left">
+          <div class="icon-box text-center pull-left media-object"> <i class="icon-eye"></i> </div>
+          <div class="feature-text media-body">
+            <h4>Contact For COVID19 Visualisation API</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="feature-box media pull-left">
+          <div class="icon-box text-center pull-left media-object"> <i class="icon-heart"></i> </div>
+          <div class="feature-text media-body">
+            <h4>Send Your Love in Mail.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="call-to-action">
+  <div class="call-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-10">
+          <div class="subscribe-text">
+            <h3>Register for Daily Update</h3>
+            <p>Join our community and get access to the latest data of Covid19 and API for COVID data Visualisation!</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center"> <a href="#contact" class="subscribe-button">Register</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h3>Register</h3>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-offset-0 col-sm-6 col-xs-offset-1 col-xs-10">
+        <div class="contact-form">
+          <form role="form" action="" method="post">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name" required/>
+            </div>
+            <br>
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required/>
+            </div>
+            <div>
+              
+              <h5 style="padding-top:50px; padding-left:20px"><input type="checkbox" required/> I accept the <a href="/privacy-policy">Privacy Policies</a> and <a href="/terms-condition">Terms and Conditions (T&C)</a> </h5>
+            </div>
+            <div class="col-md-12 text-center">
+              <button type="submit" class="contact-button">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10">
+        <div class="address">
+          <h4>Project of</h4>
+          <p>Galgotias College of Engineering and Technology<br>
+            IT department - B.tech Lateral<br><br>
+            Initiative of Ved Gupta & Utkarsh<br>
+          <div class="email"><i class="fa fa-at"></i>coronaupdate.now@gmail.com<br>
+            <i class="fa fa-mobile"></i>**********</div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio -->
+<div id="work" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center text">
+        <h3>Prevention</h3>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="https://i.ibb.co/WcGg9pW/girl.jpg"> </a> </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="https://i.ibb.co/p2V6zsn/4064938.jpg"> </a> </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src="https://i.ibb.co/RyQ2JmY/coronavirus-tips-protection-against-viruses-23-2148493345.jpg"> </a> </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="portfolio-item"> <a href="#"> <img class="img-portfolio img-responsive" src=""> </a> </div>
+          </div>
+        </div>
+        <!-- /.row (nested) --> 
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank" class="view-more">view More</a> </div>
+      <!-- /.col-lg-10 --> 
+    </div>
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<div class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h3>Facts</h3>
+        </div>
+      </div>
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <div id="owl-demo" class="owl-carousel owl-theme test">
+          <div class="item">
+            <p><sup><i class="fa fa-quote-left"></i></sup>India witnessed an outbreak of the coronavirus, otherwise known as COVID-19, or SARS-CoV-2 in late January 2020 when three Indian students travelled to the southern state of Kerala from Wuhan in China - the epicenter of the outbreak. All three tested positive for COVID-19, confirming a local contagion.<sup><i class="fa fa-quote-right"></i></sup></p>
+            <br><br>
+            <p><strong>source : Statista</strong></p>
+            
+          </div>
+          <div class="item">
+            <p style="text-align: center;" ><sup><i class="fa fa-quote-left"></i></sup>COVID19 is not a such Big Problem But <br><b>"Humko nhi hoga"</b><br> this Mentality is very Big Problem<sup><i class="fa fa-quote-right"></i></sup></p>
+            <div class="test-img"> <img src="https://i.ibb.co/pZkGPTN/man-4.png"/>
+              <p><strong>Ved Gupta</strong></p>
+            </div>
+          </div>
+          <div class="item">
+            <p><sup><i class="fa fa-quote-left"></i></sup><br>When will India get Covid vaccine?<br>
+              Govt says 'maybe in any week of January' On the question of when people can expect the first shots of Covid-19 vaccine in India, Union Health Minister Harsh Vardhan on Sunday said that he was hopeful of a "potential" coronavirus vaccine by "any week of January" next year.<sup><i class="fa fa-quote-right"></i></sup></p><br><br>
+              <p><strong>source : livemint</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>What we do ?</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <p>CoronaUpdate is non-profit tool that gives the Update of COVID19 in India and its States.
+          	and also predicts the next 15 days COVID19 Situation in India.<br>
+          We send daily Update of COVID19 situation to Clients Mail .<br>
+          In the form of Plots and Bars. For easily Understand and Seeing .</p>
+          <p>
+            Technical Aspects :
+            &nbsp it uses simple Data Science & Machine learning Algorithm for Analysing and Processing Data .
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-6 block">
+          <div class="counter-item text-center">
+            <h5>Our Clients</h5><br>
+            <!-- <div class="timer" data-from="0" data-to={{num}} data-speed="5000" data-refresh-interval="50"></div>-->
+            <div><h4><b>Register to be Our Client</b></h4></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="counter-item text-center">
+            <h5>Project</h5><br>
+            <div><h4><b>On Development Stage</b></h4></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"> <span class="copyright">Copyright &copy; CoronaUpdate Team 2020.<br> All Right Reserved</span> </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://www.instagram.com/innovatorved?r=nametag" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+          <li><a href="https://www.facebook.com/innovatorved" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://github.com/innovatorved/" target="_blank"><i class="fa fa-github"></i></a> </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <li>Designed by <a href="#">Ved Gupta</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src=""></script> 
+
+<script type="text/javascript" src="{{url_for('static', filename='/js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='/js/owl.carousel.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='/js/jquery.countTo.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='/js/jquery.waypoints.min.js')}}"></script>
+
+
+ 
+<script>
+$(document).ready(function() {
+     
+      $("#owl-demo").owlCarousel({
+     
+          navigation : false, // Show next and prev buttons
+          slideSpeed : 500,
+		  autoPlay : 3000,
+          paginationSpeed : 400,
+          singleItem:true
+     
+          // "singleItem:true" is a shortcut for:
+          // items : 1, 
+          // itemsDesktop : false,
+          // itemsDesktopSmall : false,
+          // itemsTablet: false,
+          // itemsMobile : false
+     
+      });
+     
+    });
+
+	/*$('.timer').each(count);*/
+	jQuery(function ($) {
+      // custom formatting example
+      $('.timer').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+
+
+  // start all the timers
+      $('#testimonials').waypoint(function() {
+    $('.timer').each(count);
+	});
+ 
+      function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+      }
+    });
+
+
+	$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+</body>
+</html>
